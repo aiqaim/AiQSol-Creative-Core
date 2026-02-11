@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIQSOL | Enabling a Digital Tomorrow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root { --void: #07080A; --gold: #C6A85A; --plasma: #6366F1; }
+        body { background: var(--void); color: #E2E8F0; font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: radial-gradient(circle at center, rgba(99, 102, 241, 0.1) 0%, transparent 70%); }
+        .service-card { border: 1px solid rgba(255,255,255,0.05); transition: 0.4s ease; background: rgba(255,255,255,0.02); }
+        .service-card:hover { border-color: var(--gold); background: rgba(198, 168, 90, 0.05); transform: translateY(-5px); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 w-full z-50 bg-black/90 border-b border-white/5 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter uppercase italic">AIQ<span class="text-[#C6A85A]">SOL</span></div>
+            <div class="hidden lg:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">
+                <a href="#digital" class="hover:text-white transition">Digital</a>
+                <a href="#data" class="hover:text-white transition">Data & Analytics</a>
+                <a href="#cloud" class="hover:text-white transition">Cloud</a>
+                <a href="#contact" class="hover:text-white transition">Contact Center</a>
+            </div>
+            <button class="bg-[#C6A85A] text-black px-6 py-2 text-[10px] font-black uppercase tracking-widest hover:bg-white transition">Get in Touch</button>
+        </div>
+    </nav>
+
+    <header class="relative pt-64 pb-32 px-6 max-w-7xl mx-auto hero-gradient">
+        <div class="max-w-5xl">
+            <h1 class="text-6xl md:text-9xl font-black tracking-tighter uppercase leading-[0.8] mb-8">
+                ENABLING A <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#C6A85A] to-[#6366F1]">DIGITAL TOMORROW.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-500 font-light leading-relaxed max-w-2xl mb-12">
+                Infrastructure developed by operators. High-performance systems across MEA, KSA, and APAC.
+            </p>
+            <div class="flex flex-wrap gap-6">
+                <button class="bg-white text-black px-12 py-5 text-[10px] font-black uppercase tracking-[0.2em] hover:bg-[#C6A85A] transition">Get in Touch</button>
+                <button class="border border-white/10 text-white px-12 py-5 text-[10px] font-black uppercase tracking-[0.2em] hover:border-[#C6A85A] transition">Explore Case Studies</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 max-w-7xl mx-auto border-t border-white/5">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="service-card p-10">
+                <h4 class="text-lg font-bold mb-4">Digital Commerce</h4>
+                <p class="text-gray-500 text-sm">Next-gen transactional infrastructure.</p>
+            </div>
+            <div class="service-card p-10">
+                <h4 class="text-lg font-bold mb-4">Data Modernization</h4>
+                <p class="text-gray-500 text-sm">Converting legacy bloat to high-speed assets.</p>
+            </div>
+            <div class="service-card p-10">
+                <h4 class="text-lg font-bold mb-4">Managed Services</h4>
+                <p class="text-gray-500 text-sm">24/7 operator-led system maintenance.</p>
+            </div>
+            <div class="service-card p-10">
+                <h4 class="text-lg font-bold mb-4">Security</h4>
+                <p class="text-gray-500 text-sm">Zero-trust environment protection.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 border-t border-white/5 text-center">
+        <p class="text-[10px] tracking-[0.4em] text-gray-700 uppercase mb-4 italic">MEA | KSA | APAC | GLOBAL</p>
+        <p class="text-xs text-gray-500">AIQSOL.IO © 2026 | IDENTITY IS IN THE CODE.</p>
+    </footer>
+
+</body>
+</html>
