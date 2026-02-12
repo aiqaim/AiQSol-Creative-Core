@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AiQSol | Enterprise AI & Systems</title>
+
+<style>
+:root {
+--bg:#121417;
+--surface:#1A1F24;
+--primary-gold:#C6A85A;
+--accent-hover:#E0C878;
+--text-main:#F4F7FB;
+--text-sec:#9AA4AF;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',-apple-system,sans-serif;}
+
+body{background:var(--bg);color:var(--text-main);line-height:1.6;overflow-x:hidden;}
+
+/* NAV */
+nav{
+display:flex;justify-content:space-between;align-items:center;
+padding:1.5rem 5%;
+border-bottom:1px solid rgba(198,168,90,0.1);
+background:rgba(18,20,23,0.9);
+position:sticky;top:0;z-index:1000;
+}
+
+.logo{color:white;font-weight:800;font-size:1.5rem;letter-spacing:2px;}
+.logo span{color:var(--primary-gold);}
+
+.nav-links a{
+color:var(--text-sec);
+text-decoration:none;
+margin-left:2rem;
+font-size:0.9rem;
+transition:.3s;
+}
+.nav-links a:hover{color:var(--primary-gold);}
+
+/* HERO */
+header{
+padding:8rem 5%;
+text-align:center;
+background:radial-gradient(circle at center,#1c2128 0%,#121417 100%);
+}
+
+h1{font-size:3.5rem;margin-bottom:1.5rem;text-transform:uppercase;}
+
+.hero-sub{
+color:var(--text-sec);
+max-width:700px;
+margin:0 auto 2.5rem;
+font-size:1.1rem;
+}
+
+.btn-gold{
+background:var(--primary-gold);
+color:#000;
+padding:1rem 2.5rem;
+text-decoration:none;
+font-weight:bold;
+border-radius:2px;
+transition:.3s;
+display:inline-block;
+text-transform:uppercase;
+letter-spacing:1px;
+}
+.btn-gold:hover{background:var(--accent-hover);transform:translateY(-2px);}
+
+/* STATUS */
+.status-bar{
+background:var(--surface);
+padding:1rem;
+border-top:1px solid var(--primary-gold);
+border-bottom:1px solid var(--primary-gold);
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+}
+
+.pulse{
+width:10px;height:10px;
+background:var(--primary-gold);
+border-radius:50%;
+box-shadow:0 0 10px var(--primary-gold);
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{opacity:1;}
+50%{opacity:.3;}
+100%{opacity:1;}
+}
+
+/* MANIFESTO */
+.manifesto{
+padding:5rem 10%;
+background:var(--surface);
+text-align:center;
+}
+.manifesto h2{color:var(--primary-gold);margin-bottom:1.5rem;font-size:2rem;}
+.manifesto p{max-width:800px;margin:0 auto;color:var(--text-sec);font-size:1.2rem;}
+
+/* PRODUCTS */
+.products{padding:5rem 5%;}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:2rem;
+margin-top:3rem;
+}
+
+.card{
+background:#1e242b;
+padding:2rem;
+border-left:3px solid var(--primary-gold);
+transition:.3s;
+}
+.card:hover{transform:scale(1.02);background:#252c34;}
+.card h3{margin-bottom:1rem;}
+
+.tag{
+font-size:.7rem;
+color:var(--primary-gold);
+border:1px solid var(--primary-gold);
+padding:2px 8px;
+border-radius:10px;
+float:right;
+}
+
+/* CONTACT */
+.contact{
+padding:5rem 5%;
+background:var(--bg);
+max-width:800px;
+margin:0 auto;
+text-align:center;
+}
+
+/* FOOTER */
+footer{
+padding:3rem;
+text-align:center;
+border-top:1px solid #333;
+color:var(--text-sec);
+font-size:.8rem;
+}
+
+@media(max-width:768px){
+h1{font-size:2.2rem;}
+.nav-links{display:none;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">AIQ<span>SOL</span></div>
+<div class="nav-links">
+<a href="#products">PRODUCTS</a>
+<a href="#contact">CONTACT</a>
+</div>
+</nav>
+
+<header>
+<h1>Systems Born in the Trenches.<br>Built to Dominate.</h1>
+<p class="hero-sub">
+Elite-grade AI, Android, and Windows infrastructure developed by operators for operators.
+</p>
+<a href="#contact" class="btn-gold">Initiate Clearance</a>
+</header>
+
+<div class="status-bar">
+<div class="pulse"></div>
+<span>PRE-LAUNCH PHASE ACTIVE | GRAND SYSTEM UNVEILING: FEBRUARY 25</span>
+</div>
+
+<section class="manifesto">
+<h2>THE UNDERDOG ADVANTAGE</h2>
+<p>
+Our systems were forged in high-stakes environments where speed is everything and downtime isn't an option.
+</p>
+</section>
+
+<section class="products" id="products">
+<h2 style="text-align:center;">SYSTEM REPOSITORY</h2>
+
+<div class="grid">
+
+<div class="card">
+<span class="tag">ANDROID</span>
+<h3>AQ-MOBILE v1.0</h3>
+<p>Real-time data visualization and Edge AI engines.</p>
+<p style="margin-top:1rem;font-size:.8rem;color:var(--primary-gold);">
+STATUS: IN REVIEW
+</p>
+</div>
+
+<div class="card">
+<span class="tag">WINDOWS</span>
+<h3>AQ-COMMAND</h3>
+<p>Enterprise automation and terminal-grade CRM infrastructure.</p>
+<p style="margin-top:1rem;font-size:.8rem;color:var(--primary-gold);">
+STATUS: STAGED
+</p>
+</div>
+
+<div class="card">
+<span class="tag">WHITE-LABEL</span>
+<h3>QUANTUM-CORE</h3>
+<p>Backend engines ready for rapid agency deployment.</p>
+<p style="margin-top:1rem;font-size:.8rem;color:var(--primary-gold);">
+STATUS: ENCRYPTED
+</p>
+</div>
+
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2>PARTNERSHIP INQUIRY</h2>
+
+<a class="btn-gold" href="mailto:connect@aiqsol.tech">
+Email Partnership Request
+</a>
+
+</section>
+
+<footer>
+<p>AIQSOL © 2026 | Identity is in the Code.</p>
+<p style="margin-top:10px;">connect@aiqsol.tech</p>
+</footer>
+
+</body>
+</html>
